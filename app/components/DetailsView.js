@@ -41,7 +41,7 @@ class DetailsView extends React.Component {
                         <div className="row">
                           <div className="col-md-3 company-info-values"> {this.props.detailsViewState.details.name} </div>
                           <div className="col-md-3 company-info-values"> {this.props.detailsViewState.details.industry} </div>
-                          <div className="col-md-3 company-info-values"> ${milify(parseFloat(this.props.detailsViewState.details.marketcap))} </div>
+                          <div className="col-md-3 company-info-values"> ${millify(parseFloat(this.props.detailsViewState.details.marketcap))} </div>
                           <div className="col-md-3 company-info-values"> {this.props.detailsViewState.details.sector}</div>
                         </div>
                     </div>
