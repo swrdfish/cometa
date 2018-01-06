@@ -27,7 +27,7 @@ class ChartLoader extends React.Component {
       return <div>Data not available...</div> 
     }
     return (
-      <Chart type="svg" data={this.state.data} width="1000" />
+      <Chart type="svg" data={this.state.data} width="1060" />
     )
   }
 }
