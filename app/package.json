@@ -1,0 +1,31 @@
+{
+  "name": "cometa_app",
+  "version": "0.0.1",
+  "description": "Stock archive browser",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Binayak Ghosh <github.com/swrdfish>",
+  "license": "MIT",
+  "dependencies": {
+    "d3-dsv": "^1.0.8",
+    "d3-format": "^1.2.1",
+    "d3-scale": "^1.0.7",
+    "d3-time-format": "^2.1.1",
+    "fuzzysearch": "^1.0.3",
+    "jquery": "^3.2.1",
+    "millify": "^2.0.1",
+    "next": "^4.1.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-octicon": "^2.0.0",
+    "react-redux": "^5.0.6",
+    "react-stockcharts": "next",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
