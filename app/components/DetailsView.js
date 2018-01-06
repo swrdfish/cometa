@@ -50,7 +50,7 @@ class DetailsView extends React.Component {
               <div className="company-today">
                 <IntradayViewer symbol={this.props.detailsViewState.details.symbol} />
               </div>
-              <div className="company-history">
+              <div className="company-history container">
                 <h3>History</h3>
                 <ChartLoader symbol={this.props.detailsViewState.details.symbol} />
               </div>

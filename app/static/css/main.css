@@ -223,6 +223,10 @@ i.clear-search {
     padding: 20px 20px;
 }
 
+.intraday-data {
+  margin-bottom: 50px;
+}
+
 .intraday-data-key {
     color: grey;
 }
