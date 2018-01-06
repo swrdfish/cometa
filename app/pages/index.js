@@ -35,7 +35,7 @@ class App extends React.Component {
                         <link rel="stylesheet" href="/static/css/main.css" />
                         <link rel="stylesheet" href="static/css/font-awesome.min.css" />
                         <link href="https://fonts.googleapis.com/css?family=Bellefair|Montserrat|Lato" rel="stylesheet" /> 
-                        <title>Stock Archive</title>
+                        <title>Cometa | Stock Archives</title>
                     </Head>
                     <Page>
                         <Sidebar />
