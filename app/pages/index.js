@@ -34,6 +34,7 @@ class App extends React.Component {
                         <link rel="stylesheet" href="/static/css/bootstrap.css" />
                         <link rel="stylesheet" href="/static/css/main.css" />
                         <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+                        <link rel='shortcut icon' type='image/x-icon' href='/static/assets/bull_head.png' />
                         <link href="https://fonts.googleapis.com/css?family=Bellefair|Montserrat|Lato" rel="stylesheet" /> 
                         <title>Cometa | Stock Archives</title>
                     </Head>
