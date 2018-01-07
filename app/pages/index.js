@@ -20,7 +20,7 @@ class App extends React.Component {
     }
 
     async componentDidMount() {
-        let res  = await fetch('http://localhost/api/companies/symbols')
+        let res  = await fetch('http://35.203.169.29/api/companies/symbols')
         let company_list = await res.json()
         this.store.dispatch(addCompany(company_list))
     }

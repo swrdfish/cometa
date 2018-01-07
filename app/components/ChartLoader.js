@@ -4,7 +4,7 @@ import Chart from './Chart'
 
 class ChartLoader extends React.Component {
   async componentDidMount() {
-    let res  = await fetch('http://localhost/api/price/' + this.props.symbol)
+    let res  = await fetch('http://35.203.169.29/api/price/' + this.props.symbol)
     let stock_data = await res.json()
 
     if(!stock_data.error) {
