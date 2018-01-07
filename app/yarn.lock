@@ -1043,8 +1043,8 @@ camelcase@^4.1.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000784:
-  version "1.0.30000787"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000787.tgz#a76c4fa1d6ac00640447ec83c1e7c6b33dd615c5"
+  version "1.0.30000789"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000789.tgz#2e3d937b267133f63635ef7f441fac66360fc889"
 
 case-sensitive-paths-webpack-plugin@2.1.1:
   version "2.1.1"
@@ -3157,9 +3157,9 @@ netrc@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/netrc/-/netrc-0.1.4.tgz#6be94fcaca8d77ade0a9670dc460914c94472444"
 
-next@next:
-  version "4.3.0-canary.1"
-  resolved "https://registry.yarnpkg.com/next/-/next-4.3.0-canary.1.tgz#3d7314a290eb613d110f3fca3a2b5ef2e171a89d"
+next@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/next/-/next-4.2.1.tgz#37b5637050235b92a487ca484e20088ace7e37fe"
   dependencies:
     ansi-html "0.0.7"
     babel-core "6.26.0"
