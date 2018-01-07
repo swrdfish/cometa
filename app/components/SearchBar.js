@@ -38,7 +38,7 @@ class SearchBar extends React.Component{
 		return (
 			<div className="search-wrapper">
 				<input
-					placeholder="Search: eg, acia"
+					placeholder="Search: eg, goog"
 					value={this.state.value}
 					onKeyDown={this.handleKeyDown}
 					onChange={this.handleOnChange}
