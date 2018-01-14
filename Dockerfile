@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # install nginx
-RUN apt-get update && apt-get install -y nginx && service nginx start
+RUN apt-get update && apt-get install -y nginx curl && service nginx start
 COPY nginx_conf/sites-available/default /etc/nginx/sites-available/default
 
 # install node
