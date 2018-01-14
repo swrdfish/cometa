@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # install nginx
-RUN apt-get update && apt-get install -y nginx curl && service nginx enable
+RUN apt-get update && apt-get install -y nginx curl && systemctl disable nginx
 COPY nginx_conf/sites-available/default /etc/nginx/sites-available/default
 
 # install node and pm2
@@ -16,8 +16,7 @@ ADD . /cometa
 RUN cd app/ && npm install
 RUN cd api/ && npm install
 
-
-EXPOSE 80
+EXPOSE 8081
 
 # Start PM2 as PID 1 process
 ENTRYPOINT ["pm2", "--no-daemon", "start"]

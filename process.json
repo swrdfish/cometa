@@ -11,6 +11,10 @@
             "cwd": "./api",
             "script": "npm",
             "args": "run serve"
+        },
+         {
+            "name": "nginx",
+            "script": "./startnginx.sh"
         }
     ]
 }
