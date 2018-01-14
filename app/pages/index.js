@@ -9,7 +9,6 @@ import Head from 'next/head'
 import Page from '../components/Page.js'
 import Sidebar from '../components/Sidebar.js'
 import DetailsView from '../components/DetailsView.js'
-import { addCompany } from '../actions'
 
 
 class App extends React.Component {
@@ -17,12 +16,6 @@ class App extends React.Component {
     constructor(props) {
         super(props)
         this.store = createStore(reducer)
-    }
-
-    async componentDidMount() {
-        let res  = await fetch('http://localhost/api/companies/symbols')
-        let company_list = await res.json()
-        this.store.dispatch(addCompany(company_list))
     }
 
     render() {
@@ -36,7 +29,7 @@ class App extends React.Component {
                         <link rel="stylesheet" href="static/css/font-awesome.min.css" />
                         <link rel='shortcut icon' type='image/x-icon' href='/static/assets/bull_head.png' />
                         <link href="https://fonts.googleapis.com/css?family=Bellefair|Montserrat|Lato" rel="stylesheet" /> 
-                        <title>Cometa | Stock Archives</title>
+                        <title>Cometa</title>
                     </Head>
                     <Page>
                         <Sidebar />

@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux'
-import companyFilter from './companyFilter'
-import companyList from './companyList'
+import currencyFilter from './currencyFilter'
 import detailsViewState from './detailsViewState'
 
-const peerChatApp = combineReducers({
-  companyList,
-  companyFilter,
+const cometaApp = combineReducers({
+  currencyFilter,
   detailsViewState
 })
 
-export default peerChatApp
+export default cometaApp

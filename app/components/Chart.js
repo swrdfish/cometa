@@ -4,7 +4,7 @@ import { format } from "d3-format";
 import { ChartCanvas, Chart } from "react-stockcharts";
 import {
   BarSeries,
-  CandlestickSeries,
+  LineSeries,
 } from "react-stockcharts/lib/series";
 
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
@@ -13,7 +13,7 @@ import { discontinuousTimeScaleProvider } from "react-stockcharts/lib/scale";
 import { fitWidth } from "react-stockcharts/lib/helper";
 import { last } from "react-stockcharts/lib/utils";
 
-class CandleStickStockScaleChartWithVolumeBarV1 extends React.Component {
+class PriceLineWithVolumeChart extends React.Component {
   render() {
     const { type, data: initialData, width, ratio } = this.props;
 
@@ -44,30 +44,34 @@ class CandleStickStockScaleChartWithVolumeBarV1 extends React.Component {
         xExtents={xExtents}
       >
 
-        <Chart id={1} yExtents={d => [d.high, d.low]}>
+        <Chart id={1} yExtents={d => [d.price]}>
           <XAxis axisAt="bottom" orient="bottom"/>
           <YAxis axisAt="right" orient="right" ticks={5} />
-          <CandlestickSeries />
+          <LineSeries
+            yAccessor={d => d.price}
+            stroke="#ff7f0e"
+            strokeDasharray="Solid" />
         </Chart>
-        <Chart id={2} yExtents={d => d.volume}>
+        <Chart id={2} yExtents={d => d.txVolume}>
           <YAxis axisAt="left" orient="left" ticks={5} tickFormat={format(".2s")}/>
-          <BarSeries yAccessor={d => d.volume} />
+          <BarSeries yAccessor={d => d.txVolume} opacity={0.2} stroke={false} />
         </Chart>
       </ChartCanvas>
     );
   }
 }
 
-CandleStickStockScaleChartWithVolumeBarV1.propTypes = {
+PriceLineWithVolumeChart.propTypes = {
   data: PropTypes.array.isRequired,
   width: PropTypes.number.isRequired,
   ratio: PropTypes.number.isRequired,
   type: PropTypes.oneOf(["svg", "hybrid"]).isRequired,
 };
 
-CandleStickStockScaleChartWithVolumeBarV1.defaultProps = {
+PriceLineWithVolumeChart.defaultProps = {
   type: "svg",
 };
-CandleStickStockScaleChartWithVolumeBarV1 = fitWidth(CandleStickStockScaleChartWithVolumeBarV1);
 
-export default CandleStickStockScaleChartWithVolumeBarV1;
+PriceLineWithVolumeChart = fitWidth(PriceLineWithVolumeChart);
+
+export default PriceLineWithVolumeChart;

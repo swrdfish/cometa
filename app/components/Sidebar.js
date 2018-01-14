@@ -2,7 +2,7 @@ import React from 'react'
 
 import AppLogo from './AppLogo'
 import SearchBar from './SearchBar'
-import CompanyList from './CompanyList'
+import CurrencyList from './CurrencyList'
 
 
 
@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
             <div id="sidebar" className="col-md-3">
                 <AppLogo />
                 <SearchBar />
-                <CompanyList />
+                <CurrencyList />
             </div>
         )
     }

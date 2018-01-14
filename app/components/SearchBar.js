@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { setCompanyFilter } from '../actions'
+import { setCurrencyFilter } from '../actions'
 
 
 class SearchBar extends React.Component{
@@ -17,12 +17,12 @@ class SearchBar extends React.Component{
 
 	handleOnChange(event) {
 		this.setState({value: event.target.value})
-		this.props.dispatch(setCompanyFilter(event.target.value.toLowerCase()))
+		this.props.dispatch(setCurrencyFilter(event.target.value.toLowerCase()))
 	}
 
 	handleClearSearch(event) {
 		this.setState({value: ''})
-		this.props.dispatch(setCompanyFilter(''))
+		this.props.dispatch(setCurrencyFilter(''))
 	}
 
 	handleKeyDown(event) {
@@ -30,7 +30,7 @@ class SearchBar extends React.Component{
 			event.stopPropagation()
 			event.preventDefault()
 			this.setState({value: ''})
-			this.props.dispatch(setCompanyFilter(''))
+			this.props.dispatch(setCurrencyFilter(''))
 		}
 	}
 
@@ -38,7 +38,7 @@ class SearchBar extends React.Component{
 		return (
 			<div className="search-wrapper">
 				<input
-					placeholder="Search: eg, goog"
+					placeholder="Search: eg, btc"
 					value={this.state.value}
 					onKeyDown={this.handleKeyDown}
 					onChange={this.handleOnChange}

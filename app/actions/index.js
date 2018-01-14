@@ -9,23 +9,18 @@ export const deleteMessage = (id) => ({
   id
 })
 
-export const setCompanyFilter = (compname) => ({
-  type: 'SET_COMPANY_FILTER',
-  compname
+export const setCurrencyFilter = (currency) => ({
+  type: 'SET_CURRENCY_FILTER',
+  currency
 })
 
-export const addCompany = (company_list) => ({
-  type: 'ADD_COMPANY',
-  company_list
-})
-
-export const setCompanyDetails = (company_details) => ({
-  type: "SET_COMP",
-  company_details
+export const setCurrencyDetails = (currency_details) => ({
+  type: "SET_CURR",
+  currency_details
 })
 
 export const setDetailsLoading = (isLoading, symbol) => ({
-  type: "SET_COMP_LOADING",
+  type: "SET_CURR_LOADING",
   isLoading,
   symbol
 })

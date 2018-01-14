@@ -1,5 +1,5 @@
 body {
-	background-image: url("/static/img/bg.jpg");
+	background-image: radial-gradient(circle,#fff 0,#0084af 100%);
 	background-size: cover;
 	background-position: center;
 	font-family: 'Lato', sans-serif;
@@ -135,12 +135,12 @@ i.clear-search {
 	flex: 1;
 }
 
-.company-list-wrapper {
+.currency-list-wrapper {
   flex: 2;
   overflow: auto;
 }
 
-.company-list-item {
+.currency-list-item {
 	padding: 20px 10px;
 	display: flex;
 	justify-content: center;
@@ -148,11 +148,11 @@ i.clear-search {
   color: grey;
 }
 
-.company-list-item:hover {
+.currency-list-item:hover {
 	background: #eee;
   cursor: pointer;
 }
-.company-profile-picture {
+.currency-profile-picture {
     height: 50px;
     width: 50px;
     background-position: center;
@@ -160,12 +160,12 @@ i.clear-search {
     border-radius: 50%;
 }
 
-.company-name {
+.currency-name {
 	padding-left: 20px;
 	flex: 1;
 }
 
-.company-not-found {
+.currency-not-found {
   color: #aaa;
   text-align: center;
   padding: 20px;
@@ -189,11 +189,11 @@ i.clear-search {
   color: grey
 }
 
-.company-history {
+.currency-history {
   flex: 1
 }
 
-.company-info-symbol {
+.currency-info-symbol {
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -202,29 +202,30 @@ i.clear-search {
     min-height: 60px;
 }
 
-.company-info-values {
+.currency-info-values {
     display: block;
     overflow: hidden;
     font-size: 0.9em;
     color: #2b71b1;
 }
 
-.company-info-wrapper {
+.currency-info-wrapper {
     padding: 5px 20px;
     border-bottom: 1px solid #d8d8d8;
     /*box-shadow: 0px 2px 3px 0px #ececec;*/
 }
 
-.company-info-titles {
+.currency-info-titles {
     color: #bbb;
 }
 
-.company-today {
+.currency-today {
     padding: 20px 20px;
 }
 
 .intraday-data {
   margin-bottom: 50px;
+  min-height: 72px;
 }
 
 .intraday-data-key {
