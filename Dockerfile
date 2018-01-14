@@ -10,6 +10,11 @@ WORKDIR /cometa
 
 ADD . /cometa
 
-RUN cd app/ && 
+# install dependencies
+RUN cd app/ && npm install
+RUN cd api/ && npm install 
+
 
 EXPOSE 80
+
+CMD cd api && npm run serve
