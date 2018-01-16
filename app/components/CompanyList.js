@@ -12,7 +12,7 @@ class CompanyList extends React.Component {
 
 	async handleSelect(event) {
 			this.props.dispatch(setDetailsLoading(true, event.target.getAttribute('data-key')))
-			let res = await fetch('http://35.203.169.29/api/company/info/' + event.target.getAttribute('data-key'))
+			let res = await fetch('http://35.197.103.84/api/company/info/' + event.target.getAttribute('data-key'))
       let company_info = await res.json()
 			this.props.dispatch(setCompanyDetails(company_info))
 	}
