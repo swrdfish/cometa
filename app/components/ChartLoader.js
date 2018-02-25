@@ -11,7 +11,7 @@ class ChartLoader extends React.Component {
   async fetchData() {
     this.setState({loading: true})
 
-    let res  = await fetch('http://104.196.36.39/api/price/' + this.props.symbol)
+    let res  = await fetch('/api/price/' + this.props.symbol)
     let stock_data = await res.json()
 
     if(!stock_data.error) {
