@@ -13,7 +13,7 @@ WORKDIR /cometa
 ADD . /cometa
 
 # install dependencies
-RUN cd app/ && npm install
+RUN cd app/ && npm install && npm run build
 RUN cd api/ && rm -r node_modules/ && npm install
 
 
